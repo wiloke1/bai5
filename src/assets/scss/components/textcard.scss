@@ -1,0 +1,32 @@
+
+/* Text card */
+.text-card {
+  --circle-size: 79px;
+  padding-top: calc(var(--circle-size) / 2);
+}
+
+.text-card__header {
+  position: relative;
+  z-index: 1;
+}
+
+.text-card__circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background-color: var(--var-cirlcle-color, $color-gray1);
+}
+
+.text-card__title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.text-card__header + .text-card__text {
+  margin-top: 22px;
+}

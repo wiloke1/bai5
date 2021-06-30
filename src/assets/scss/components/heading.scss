@@ -1,0 +1,19 @@
+/* Heading */
+.heading {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.heading__title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.heading__highlight {
+  color: $color-primary;
+}
+
+.heading__text {
+  margin-top: 18px;
+}
