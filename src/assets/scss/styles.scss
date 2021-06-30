@@ -15,3 +15,8 @@
 /* 4. Components
 ======================================================================== */
 @import "components/**/*.scss";
+
+
+.active {
+  background-color: $color-primary;
+}

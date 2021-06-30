@@ -1,0 +1,45 @@
+.toggle-nav-mobile {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid $color-gray9;
+  cursor: pointer;
+  @media (min-width: 930px) {
+    display: none;
+  }
+}
+
+.toggle-nav-mobile__item {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 80%;
+  height: 4px;
+  background-color: $color-gray9;
+  transition: all 0.3s;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: $color-gray9;
+    transition: inherit;
+  }
+  &:before {
+    transform: translateY(-10px);
+  }
+  &:after {
+    transform: translateY(10px);
+  }
+}
+
+.toggle-nav-mobile--active {
+  .toggle-nav-mobile__item {
+    background-color: transparent;
+    &:before {
+      transform: translateY(0) rotate(45deg);
+    }
+    &:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+}

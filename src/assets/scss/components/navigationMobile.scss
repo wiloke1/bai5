@@ -1,0 +1,38 @@
+.navigation-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 300px;
+  height: 100%;
+  padding: 15px;
+  background-color: $color-gray9;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  @media (min-width: 930px) {
+    display: none;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.navigation-mobile__menu {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-mobile__item {
+  padding: 5px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.3s;
+}
+
+.navigation-mobile--active {
+  transform: translateX(0);
+  .navigation-mobile__item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
