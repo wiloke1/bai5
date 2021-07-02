@@ -1,0 +1,48 @@
+.switch {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch__button {
+  --size: 28px;
+  position: relative;
+  display: inline-block;
+  width: calc(var(--size) * 2 - 5px);
+  height: var(--size);
+  border-radius: var(--size);
+  background-color: $color-gray4;
+  transition: all 0.3s ease;
+  &:before {
+    content: '';
+    width: calc(var(--size) - 4px);
+    height: calc(var(--size) - 4px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+    margin: auto;
+    background-color: $color-freeze-light;
+    border-radius: calc(var(--size) - 4px);
+    transition: inherit;
+  }
+}
+
+.switch__input {
+  display: none;
+  &:active {
+    + .switch__button {
+      &:before {
+        width: calc(var(--size) + 3px);
+      }
+    }
+  }
+  &:checked {
+    + .switch__button {
+      background-color: $color-primary;
+      &:before {
+        transform: translateX(calc(var(--size) * 2 - 5px - 100% - 4px));
+      }
+    }
+  }
+}

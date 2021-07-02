@@ -13,6 +13,17 @@ $color-gray8: var(--color-gray8);
 $color-gray9: var(--color-gray9);
 $color-light: var(--color-light);
 
+$color-freeze-gray1: var(--color-freeze-gray1);
+$color-freeze-gray2: var(--color-freeze-gray2);
+$color-freeze-gray3: var(--color-freeze-gray3);
+$color-freeze-gray4: var(--color-freeze-gray4);
+$color-freeze-gray5: var(--color-freeze-gray5);
+$color-freeze-gray6: var(--color-freeze-gray6);
+$color-freeze-gray7: var(--color-freeze-gray7);
+$color-freeze-gray8: var(--color-freeze-gray8);
+$color-freeze-gray9: var(--color-freeze-gray9);
+$color-freeze-light: var(--color-freeze-light);
+
 :root {
   /* Colors */
   --color-primary: #616AE8;
@@ -27,7 +38,31 @@ $color-light: var(--color-light);
   --color-gray2: rgb(231, 231, 235);
   --color-gray1: #f1f1f3;
   --color-light: #fff;
+
+  --color-freeze-gray9: #2E2A41;
+  --color-freeze-gray8: #444057;
+  --color-freeze-gray7: #7E7FA0;
+  --color-freeze-gray6: #9d9eb4;
+  --color-freeze-gray5: #a7a8b3;
+  --color-freeze-gray4: #b3b4be;
+  --color-freeze-gray3: #E8E8EB;
+  --color-freeze-gray2: rgb(231, 231, 235);
+  --color-freeze-gray1: #f1f1f3;
+  --color-freeze-light: #fff;
   /* Fonts */
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
+}
+
+body.dark {
+  --color-light: #2E2A41;
+  --color-gray1: #2E2A41;
+  --color-gray2: #444057;
+  --color-gray3: #7E7FA0;
+  --color-gray4: #9d9eb4;
+  --color-gray5: #a7a8b3;
+  --color-gray6: #b3b4be;
+  --color-gray7: #E8E8EB;
+  --color-gray8: rgb(231, 231, 235);
+  --color-gray9: #f1f1f3;
 }

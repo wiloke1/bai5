@@ -1,0 +1,6 @@
+@function color($isDark, $colorLight, $colorDark) {
+  @if ($isDark) {
+    @return $colorDark;
+  }
+  @return $colorLight;
+}
